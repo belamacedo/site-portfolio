@@ -1,0 +1,270 @@
+:root {
+	--purple: rgb(108, 99, 255);
+	--white: #ffffff;
+	--dark: #171717;
+	--gray: #828282;
+	--light-dark: #212121;
+}
+
+html {
+	background-color: var(--dark);
+	color: var(--white);
+	scroll-behavior: smooth;
+	font-family: "DM Sans";
+}
+
+.logo {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 34px;
+}
+
+.logo a {
+	color: var(--purple);
+}
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	padding: 35px 30px;
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-menu ul {
+	display: flex;
+}
+
+.nav-menu ul li {
+	margin-right: 20px;
+}
+
+.nav-menu ul li a {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 23px;
+	color: var(--white);
+	padding: 15px;
+	transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+	color: var(--purple);
+}
+.home {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 150px;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.button-flex {
+	display: flex;
+	justify-content: space-evenly;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.button {
+	font-size: 0.8rem;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	margin: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.download-btn {
+	background: var(--purple);
+	width: 220px;
+	height: 50px;
+	border: none;
+}
+
+.download-btn a {
+	color: var(--dark);
+}
+
+.contact-btn {
+	background: #111;
+	width: 220px;
+	height: 51px;
+	border: none;
+}
+
+.contact-btn a {
+	color: var(--white);
+}
+
+.gradient-d:before {
+	background: linear-gradient(45deg, var(--white), #e8e8ea);
+}
+
+.gradient-c:before {
+	background: linear-gradient(45deg, #7a00ff, #ff00c8);
+}
+
+.glow-on-hover:before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 15s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+.glow-on-hover:active {
+	color: #000;
+}
+
+.glow-on-hover:active:after {
+	background: transparent;
+}
+
+.glow-on-hover:hover:before {
+	opacity: 1;
+}
+
+.glow-on-hover:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 400;
+}
+
+#home-name {
+	font-size: 5.6rem;
+	font-weight: 600;
+}
+
+.typewriter:after {
+	content: "|";
+	margin-left: 8px;
+	opacity: 1;
+	-webkit-animation: blink 1s infinite;
+	animation: blink 1s infinite;
+	color: var(--purple);
+}
+
+@-webkit-keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 700px;
+	height: 160px;
+	padding: 100px;
+}
+
+.about-container h1 {
+	padding: 20px;
+}
+
+.about-container p {
+	color: var(--gray);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	max-width: 745px;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 32px;
+	color: var(--gray);
+}
+
+.redes-sociais {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 75px;
+}
+
+.single-redes-sociais {
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.img-redes-sociais {
+	background: var(--light-dark);
+	margin-bottom: 19px;
+	border-radius: 50%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-redes-sociais:hover {
+	background-image: linear-gradient(to right, indigo, var(--purple));
+	animation: slidebg 10s linear infinite;
+}
+
+@keyframes slidebg {
+	to {
+		background-position: 20vw;
+	}
+}
