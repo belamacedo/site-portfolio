@@ -24,11 +24,6 @@
                     <li class="item-list"><a class="nav-link" href="#s-contacts">Contato</a></li>
                 </ul>
     
-                <div class="menu-icon">
-                    <div id="line-one" class="line-1"></div>
-                    <div id="line-two" class="line-2"></div>
-                    <div id="line-three" class="line-3"></div>
-                </div>
             </nav>
         </header>
 
@@ -42,11 +37,11 @@
                     <p id="typeWriter" class="d-300">desenvolvedora Front-end :)</p>
                     <div class="buttons-home">
                         <a class="contact-btn" href="#s-contacts">Entrar em contato</a>
-                        <a class="download-btn" href="#">CV Download</a>
-                    </div>
+                        <a class="download-btn" href="./assets/cv/CV-Isabela Macedo-linkedin.pdf" download>CV Download</a>
+                    </div>                    
                 </article>
-    
-                <img class="img-home" width="400px" height="400px"  src="./assets/img/undraw-programmer.png" alt="UndrawSvg">
+                <img class="img-home"  src="./assets/img/undraw-programmer.png" alt="UndrawSvg">
+                
     
             </section>
 
@@ -169,8 +164,9 @@
                 <h2 class="h2-projects"><spam>&lt</spam>Conhecimentos<spam>/&gt</spam></h2>
                 </h2>
                 <spam class="card-name"></spam>
-                <p id="skills-info">* passe o cursor sobre os ícones para saber mais *
-            </article>
+                <p id="skills-info" class="changeDescription">* passe o cursor sobre os ícones para saber mais *
+                    
+                </article>
 
             <div class="skills-grid">              
                     
@@ -186,24 +182,13 @@
 
                 <h2 class="h2-contacts"><spam>&lt</spam>Contatos<spam>/&gt</spam></h2>
 
-                <div class="social-links ">
-
-                    <a href="https://www.linkedin.com/in/isabelacbmacedo/">
-                        <img src="./assets/img/linkedin-icon.png" class="icon" alt="LinkedIn">
-                    </a>
-
-                    <a href="https://github.com/belamacedo"><img src="./assets/img/github-icon.png" class="icon" alt="GitHub">
-                    </a>
-
-                    <a href="https://instagram.com/isabelabmacedo"><img src="./assets/img/instagram-icon.png" class="icon" alt="Instagram"></a>
-
-                </div>
+                <div class="social-links "></div>
 
             </article>
 
             <form action="https://formsubmit.co/isabelacb.macedo@gmail.com" method="POST" class="form">
                 <label>
-                    <input type="text" name="Nome" placeholder="Seu nome" required autocomplete>
+                    <input type="text" name="Nome" placeholder="Digite seu nome" required autocomplete>
                 </label>
 
                 <label>
@@ -211,7 +196,7 @@
                 </label>
 
                 <label>
-                    <textarea name="Mensagem" placeholder="Deixe sua mensagem"></textarea>
+                    <textarea name="Mensagem" placeholder="Deixe sua mensagem aqui."></textarea>
                 </label>
 
                 <input type="hidden" name="_captcha" value="false">
@@ -224,14 +209,18 @@
         </section>
 
         <footer>
-            <p>Feito com amor por <span class="footer">© Isabela Macedo</span>. <3 </p>
+            <div class="footer">
+            <p>Feito com amor por <span class="mention-name">© Isabela Macedo</span>. <3 </p>
+
+            </div>
         </footer>
         </main>
         </section>
 
+    <script src="./assets/js/socialLinks.js"></script>
     <script src="./assets/js/typeWriter.js"></script>
     <script src="./assets/js/skills.js"></script>
-    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/hoverSkills.js"></script>
     <script src="./assets/js/showMore.js"></script>
 	</body>
 </html>
