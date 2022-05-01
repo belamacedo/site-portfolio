@@ -1,15 +1,15 @@
 const button = document.querySelector(".show-more");
-const rowProjectsTwo = document.querySelector(".row-2");
+const rowTwo = document.querySelector(".row-2");
 
-rowProjectsTwo.style.display = "none";
+rowTwo.style.display = "none";
 
 // Ver Mais
 const showMore = () => {
-	if (rowProjectsTwo.style.display === "flex") {
-		rowProjectsTwo.style.display = "none";
+	if (rowTwo.style.display === "flex") {
+		rowTwo.style.display = "none";
 		button.innerHTML = "Ver mais";
-	} else if (rowProjectsTwo.style.display === "none") {
-		rowProjectsTwo.style.display = "flex";
+	} else if (rowTwo.style.display === "none") {
+		rowTwo.style.display = "flex";
 		button.innerHTML = "Ver menos";
 	}
 };
