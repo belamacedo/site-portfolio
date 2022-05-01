@@ -148,6 +148,7 @@ main {
 
 .home {
 	display: flex;
+	margin-left: 110px;
 	padding: 70px 40px;
 }
 
@@ -363,14 +364,14 @@ h2 spam {
 	font-weight: 500;
 }
 
-.btns-project {
+.project-btn {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	margin: 20px 0;
 }
 
-.btns-project a {
+.project-btn a {
 	padding: 10px 20px;
 	margin-top: 10px;
 	outline: none;
@@ -380,7 +381,7 @@ h2 spam {
 	text-decoration: none;
 }
 
-.btns-project a:hover {
+.project-btn a:hover {
 	opacity: 0.8;
 }
 
@@ -408,7 +409,7 @@ h2 spam {
 
 .show-more {
 	display: block;
-	margin: 150px auto 0 auto;
+	margin: 100px auto 0 auto;
 	padding: 10px 60px;
 	border-radius: 6px;
 	border: 1px solid var(--white);
