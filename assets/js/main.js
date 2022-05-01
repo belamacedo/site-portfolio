@@ -1,9 +1,5 @@
 const redesSociais = [
 	{
-		link: "mailto:isabelacb.macedo@gmail.com",
-		icone: "./assets/img/email-icon.png",
-	},
-	{
 		link: "https://www.linkedin.com/in/isabelacbmacedo/",
 		icone: "./assets/img/linkedin-icon.png",
 	},
