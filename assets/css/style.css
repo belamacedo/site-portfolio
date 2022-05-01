@@ -6,7 +6,7 @@
 }
 
 :root {
-	--purple: rgb(108, 99, 255);
+	--purple: #6c63ff;
 	--snow: #fafafa;
 	--white: #fff;
 	--dark: #171717;
@@ -200,7 +200,6 @@ h1 {
 	opacity: 1;
 	-webkit-animation: blink 1s infinite;
 	animation: blink 1s infinite;
-	color: var(--purple);
 }
 
 .contact-btn {
@@ -428,6 +427,102 @@ h2 spam {
 .my-repositories {
 	margin-left: 8%;
 	color: var(--white);
+}
+
+/*-------------------------------------*/
+
+/*------------ Projetos -----------*/
+
+.contacts {
+	display: flex;
+	padding: 70px 70px 60px 70px;
+	gap: 20%;
+}
+
+.main-contacts {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+}
+
+.h2-contacts {
+	margin-bottom: 25px;
+	font-size: 4rem;
+	color: var(--snow);
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	margin-left: 27px;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+.social-links img {
+	transition: 0.2s;
+}
+
+.social-links img:hover {
+	transform: scale(1.2);
+}
+
+.form {
+	height: 390px;
+	width: 35%;
+	padding: 20px;
+	border-radius: 1rem;
+	background-color: var(--dark);
+}
+
+.form label {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: var(--snow);
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	padding: 15px 0 15px 8px;
+	background-color: #343434;
+	color: var(--snow);
+	border: none;
+	border-radius: 8px;
+	outline: none;
+}
+
+.form textarea {
+	display: block;
+	width: 100%;
+	height: 100px;
+	padding: 8px;
+	background-color: #343434;
+	color: var(--snow);
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	resize: none;
+}
+
+.form button {
+	display: block;
+	width: 60%;
+	margin-top: 30px;
+	padding: 10px 0;
+	background-color: var(--purple);
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 2rem;
+	font-weight: 550;
+	cursor: pointer;
+	outline: none;
+}
+
+.form button:hover {
+	filter: brightness(0.9);
 }
 
 /*-------------------------------------*/
