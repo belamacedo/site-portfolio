@@ -14,16 +14,16 @@ const redesSociais = [
 ];
 
 listarRedesSociais = () => {
-	let boxRedes = document.querySelector(".redes-sociais");
+	let boxRedes = document.querySelector(".social-links");
 
 	redesSociais.map((valRedes) => {
 		boxRedes.innerHTML +=
 			`
-        <div class="single-redes-sociais">	
+        <div >	
 		<a href="` +
 			valRedes.link +
 			`">	
-          <figure class="img-redes-sociais grow">		
+          <figure>		
             <img src=` +
 			valRedes.icone +
 			` alt="Ícones das redes sociais">			
