@@ -271,7 +271,6 @@ h1 {
 
 .about-info {
 	max-width: 630px;
-	padding-top: 80px;
 }
 
 .about-info h2 {
@@ -443,9 +442,6 @@ h2 spam {
 }
 
 .skills-article {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	width: 80%;
 	min-height: 380px;
 	min-width: 400px;
