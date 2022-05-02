@@ -663,6 +663,12 @@ h2 spam {
 		margin: 3px;
 	}
 
+	.about {
+		margin: 0;
+		justify-items: center;
+		align-items: center;
+	}
+
 	.main-home p {
 		margin-left: 20px;
 	}
@@ -683,6 +689,7 @@ h2 spam {
 		gap: 0;
 		padding: 50px 20px 100px 20px;
 		text-align: center;
+		margin: 0;
 	}
 
 	.skills-article {
@@ -690,11 +697,17 @@ h2 spam {
 		min-width: 320px;
 	}
 
-	.contact {
+	.contacts {
 		flex-direction: column;
 		align-items: center;
 		padding: 50px 20px;
 		gap: 40px;
+		margin: 0;
+		justify-content: center;
+	}
+
+	.profile-about {
+		margin: 0;
 	}
 
 	.main-contacts {
@@ -779,18 +792,9 @@ h2 spam {
 		max-width: 40%;
 	}
 
-	.about {
-		justify-items: center;
-		align-items: center;
-	}
-
 	.profile-about {
 		width: 40%;
 		height: 40%;
-	}
-
-	.contacts {
-		justify-content: center;
 	}
 }
 
